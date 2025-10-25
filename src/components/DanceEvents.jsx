@@ -12,10 +12,7 @@ const DanceEvents = () => {
       <div className="flex justify-center  py-10">
         <img src={title} alt="Dance Title" className="w-1/3" />
       </div>
-
-     
-        <DanceContentLarge/>
-     
+        <DanceContentLarge/> 
     </div>
   )
 }
