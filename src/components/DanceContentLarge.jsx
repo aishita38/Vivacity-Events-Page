@@ -19,7 +19,17 @@ const DanceContentLarge = ({ danceCards }) => {
       {danceCards.map((card, index) => (
         <div
           key={index}
-          className={`relative w-full md:w-[48%] lg:w-[48%] ${card.aspect} max-w-full overflow-hidden`}
+          className={`
+            relative overflow-hidden 
+            w-full
+            md:w-auto
+            lg:w-auto
+            ${card.aspect}                
+            md:h-[200px]
+            lg:h-[350px]
+            flex items-center justify-center
+            transition-all duration-300
+          `}
           style={{
             backgroundImage: `url('${card.bg}')`,
             backgroundSize: 'cover',
