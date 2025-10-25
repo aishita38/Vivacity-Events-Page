@@ -1,10 +1,10 @@
 import React from 'react'
 import DanceEvents from './DanceEvents'
 
-const Events = () => {
+const Events = (props) => {
   return (
     <div>
-      <DanceEvents/>
+      <DanceEvents danceCards = {props.danceCards}/>
     </div>
   )
 }

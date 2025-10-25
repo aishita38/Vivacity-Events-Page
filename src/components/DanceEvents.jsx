@@ -3,7 +3,7 @@ import bg from '../assets/background-viva-dance.webp'
 import title from '../assets/DanceTitle2.webp'
 import DanceContentLarge from './DanceContentLarge'
 
-const DanceEvents = () => {
+const DanceEvents = (props) => {
   return (
     <div
       className="relative w-full bg-cover bg-center flex flex-col"
@@ -12,7 +12,7 @@ const DanceEvents = () => {
       <div className="flex justify-center  py-10">
         <img src={title} alt="Dance Title" className="w-1/3" />
       </div>
-        <DanceContentLarge/> 
+        <DanceContentLarge danceCards = {props.danceCards} />
     </div>
   )
 }
